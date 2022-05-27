@@ -6,6 +6,15 @@
 
 def find_anagram(word, anagram):
     # [assignment] Add your code here
-
-    return True
-
+    word = word.strip()
+    anagram = anagram.strip()
+    word = sorted(word)
+    anagram = sorted(anagram)
+    if word == anagram:
+        print(True)
+    else:
+        print(False)
+find_anagram('elbow', 'below')
+#this will return true
+find_anagram('zuri', 'ingressive')
+#this will return false
